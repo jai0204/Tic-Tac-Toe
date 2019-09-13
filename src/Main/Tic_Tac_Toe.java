@@ -650,6 +650,7 @@ public class Tic_Tac_Toe extends javax.swing.JFrame {
         else
             jTextField4.setText("SERIES DRAW");
         reset.setEnabled(false);
+        disable();
         play.setEnabled(true);
     }//GEN-LAST:event_resultActionPerformed
 
@@ -671,6 +672,21 @@ public class Tic_Tac_Toe extends javax.swing.JFrame {
             setcolor(jButton2);
     }//GEN-LAST:event_jButton2MouseEntered
     /*functions used in program*/
+    public void disable()
+    {
+        jButton1.setEnabled(false);
+        jButton2.setEnabled(false);
+        jButton3.setEnabled(false);
+        jButton4.setEnabled(false);
+        jButton5.setEnabled(false);
+        jButton6.setEnabled(false);
+        jButton7.setEnabled(false);
+        jButton8.setEnabled(false);
+        jButton9.setEnabled(false);
+        result.setEnabled(false);
+        reset.setEnabled(false);
+    }
+    
     public void reset()//reset match for further playing
     {
         j=0;
